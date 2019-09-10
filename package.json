@@ -6,9 +6,14 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "printenv",
-    "build": "mkdir build && cp index.html build"
+    "build": "mkdir build && cp index.html build",
+    "prelocalbuild": "rm -rf functions-build && mkdir functions-build",
+    "localbuild": "zip-it-and-ship-it functions functions-build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@netlify/zip-it-and-ship-it": "^0.3.1"
+  }
 }
