@@ -1,1 +1,1 @@
-module.exports = 'there'
+module.exports = 'hi from parent'
