@@ -1,3 +1,4 @@
 [build]
   publish = "build"
-  command = "npm run build ; sleep 120 ; false"
+  command = "npm run build"
+  functions = "functions"
